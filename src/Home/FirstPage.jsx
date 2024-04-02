@@ -37,7 +37,7 @@ const smallScreenTextContainerStyle = {
          <h1 className='text-5xl font-bold contactTex '>AN</h1>
         <h1 className='contactText  text-8xl font-bold textWithStroke tracking-wide -mt-6 ' >EXPRESSION</h1>
         <h1 className= 'contactText text-8xl font-bold text-amber-400 tracking-wide italic -mt-7  '>OF CULTURES</h1>
-        <h1  className='text-2xl  font-semibold pt-3 '>A mouthful of flavour and a table full of delight!</h1>
+        {/* <h1  className='text-2xl  font-semibold pt-3 '>A mouthful of flavour and a table full of delight!</h1> */}
           
         </div>
       </div>
