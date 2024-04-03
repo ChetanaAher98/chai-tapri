@@ -12,7 +12,7 @@ export default function OurVoice() {
                 <div className="flex flex-col md:flex-row gap-8">
                     <div className="w-full md:w-1/2 relative">
                         <div className="relative">
-                            <img src={dchaiOne} alt="About" style={{ borderRadius: "25px" }} className="w-full md:max-w-full" />
+                            <img src={dchaiOne} alt="About" style={{ borderRadius: "25px" }} className="w-full md:max-w-full" data-aos="flip-left" />
                             <div className="absolute bottom-0 left-0 p-4 bg-opacity-50 text-white" style={{ marginBottom: "20px", marginLeft: "20px" }}>
                                 <h2 className="text-2xl font-semibold mb-2">Chai Development</h2>
                                 <p>Explore opportunities around the globe</p>
@@ -22,7 +22,7 @@ export default function OurVoice() {
                     </div>
                     <div className="w-full md:w-1/2 relative mt-6 md:mt-0">
                         <div className="relative">
-                            <img src={dchaitwo} alt="About" style={{ borderRadius: "25px" }} className="w-full md:max-w-full" />
+                            <img src={dchaitwo} alt="About" style={{ borderRadius: "25px" }} className="w-full md:max-w-full" data-aos="flip-left" />
                             <div className="absolute bottom-0 left-0 p-4 bg-opacity-50 text-white" style={{ marginBottom: "20px", marginLeft: "20px" }}>
                                 <h2 className="text-2xl font-semibold mb-2">Chai Development</h2>
                                <p>For current or prospective shareholders</p>
@@ -47,7 +47,7 @@ export default function OurVoice() {
             <div className="flex flex-wrap justify-center ">
                 <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-8">
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src={card1} alt="Placeholder" className="w-full h-40 object-cover" />
+                        <img src={card1} alt="Placeholder" className="w-full h-40 object-cover" data-aos="flip-left" />
                         <div className="p-4">
                             <h2 className="text-xl font-semibold mb-2">Chai News Center</h2>
                             <a href="https://www.instagram.com/chaitapriblore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="mt-4 block text-blue-500">View On Linkdin</a>
@@ -56,7 +56,7 @@ export default function OurVoice() {
                 </div>
                 <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-8">
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src={card2} alt="Placeholder" className="w-full h-40 object-cover" />
+                        <img src={card2} alt="Placeholder" className="w-full h-40 object-cover" data-aos="flip-left" />
                         <div className="p-4">
                             <h2 className="text-xl font-semibold mb-2">David Blog</h2>
                             <a href="https://www.instagram.com/" className="mt-4 block text-blue-500 hover:underline">View on Linkdin</a>
@@ -65,7 +65,7 @@ export default function OurVoice() {
                 </div>
                 <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-8">
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src={card3} alt="Placeholder" className="w-full h-40 object-cover" />
+                        <img src={card3} alt="Placeholder" className="w-full h-40 object-cover"  data-aos="flip-left"/>
                         <div className="p-4">
                             <h2 className="text-xl font-semibold mb-2">Anthony Blog</h2>
                            
@@ -75,7 +75,7 @@ export default function OurVoice() {
                 </div>
                 <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-8">
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src={card4} alt="Placeholder" className="w-full h-40 object-cover" />
+                        <img src={card4} alt="Placeholder" className="w-full h-40 object-cover" data-aos="flip-left"/>
                         <div className="p-4">
                             <h2 className="text-xl font-semibold mb-2">Heart of the House</h2>
                             <a href="https://www.instagram.com/" className="mt-4 block text-blue-500 hover:underline">View on Linkdin</a>

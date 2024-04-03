@@ -1,0 +1,23 @@
+/* Video.css */
+
+@media (max-width: 768px) {
+    .background-container {
+        background-color: black;
+        background-size: cover;
+        height: 500px;
+    }
+}
+@media (max-width: 768px) {
+    .main {
+       
+        background-size: cover;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -80px;
+    }
+}
+
+.bg{
+    background-color: black;
+}

@@ -9,7 +9,8 @@ export default function Overview() {
 
   return (
     <>
-      <div className="bg-gray-100 flex">
+    <div data-aos="fade-up">
+      <div className="bg-gray-100 flex ">
         <div className="max-w-4xl mx-auto px-4">
           <div className="py-4 text-center">
             <h1 className="text-5xl md:text-4xl font-semibold text-blue-900 mb-4">We Are Chai Tapri</h1>
@@ -18,12 +19,13 @@ export default function Overview() {
         </div>
       </div>
 
-      <div className='w-full'>
+      <div className='w-full' >
         <img src={aboutbanner} alt="" style={{ width: '100%', height: '70vh' }} />
+      </div>
       </div>
       <BrandLeader/>
       <Brand/>
       <OurVoice/>
-    </>
+    </> 
   );
 }

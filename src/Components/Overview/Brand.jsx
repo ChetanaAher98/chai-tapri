@@ -1,5 +1,6 @@
 import React from "react";
 import aboutimaage from "../../assets/images";
+import { Link } from "react-router-dom";
 
 export default function Brand() {
   const { coreimg, strategy, diversity, impact } = aboutimaage;
@@ -10,8 +11,8 @@ export default function Brand() {
           {/* core section */}
           <div className="flex flex-col md:flex-row justify-center md:max-w-7xl mx-auto">
             <div className="w-full md:w-1/2 flex items-center justify-center mb-4 md:mb-0">
-              <div className="bg-gray-300">
-                <img src={coreimg} alt="" className="max-w-full" />
+              <div className="">
+                <img src={coreimg} alt="" className="max-w-full"data-aos="zoom-in" />
               </div>
             </div>
             <div className="w-full bg-white md:w-1/2 flex items-center justify-center">
@@ -24,9 +25,15 @@ export default function Brand() {
                   leadership since 1927, their principles remain embedded in the
                   company's culture and in everything we do today.
                 </p>
-                <button className="bg-blue-500 hover:bg-blue-600 my-3 py-2 text-white font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
+                {/* <button className="bg-blue-500 hover:bg-blue-600 my-3 py-2 text-white font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
                   Our Story
-                </button>
+                </button> */}
+
+<Link to="/video">
+      <button className="bg-blue-500 hover:bg-blue-600 my-3 py-2 text-white font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
+        Our Story
+      </button>
+    </Link>
               </div>
             </div>
           </div>
@@ -49,8 +56,8 @@ export default function Brand() {
               </div>
             </div>
             <div className="w-full md:w-1/2 flex items-center justify-center mb-4 md:mb-0 order-1 md:order-2">
-              <div className="bg-gray-300">
-                <img src={strategy} alt="" className="max-w-full" />
+              <div className="">
+                <img src={strategy} alt="" className="max-w-full" data-aos="zoom-in" />
               </div>
             </div>
           </div>
@@ -59,8 +66,8 @@ export default function Brand() {
           <div className="flex flex-col md:flex-row justify-center mt-10 md:max-w-7xl mx-auto">
             {/* Diversity section */}
             <div className="w-full md:w-1/2 flex items-center justify-center mb-4 md:mb-0">
-              <div className="bg-gray-300">
-                <img src={diversity} alt="" className="max-w-full" />
+              <div className="">
+                <img src={diversity} alt="" className="max-w-full" data-aos="zoom-in" />
               </div>
             </div>
             <div className="w-full bg-white md:w-1/2 flex items-center justify-center">
@@ -102,8 +109,8 @@ export default function Brand() {
               </div>
             </div>
             <div className="w-full md:w-1/2 flex items-center justify-center mb-4 md:mb-0 order-1 md:order-2">
-              <div className="bg-gray-300">
-                <img src={impact} alt="" className="max-w-full" />
+              <div className="">
+                <img src={impact} alt="" className="max-w-full" data-aos="zoom-in"  />
               </div>
             </div>
           </div>

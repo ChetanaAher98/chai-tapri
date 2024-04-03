@@ -1,0 +1,28 @@
+
+    @media (max-width: 768px) {
+        .seperator{
+           display: none;
+            height:60px ;
+            
+        }
+}
+@media (max-width: 768px) {
+.bg{
+    background-size: cover;
+        height: 500px;
+}
+}
+
+@media (max-width: 768px) {
+.restaurent{
+    background-size: cover;
+        height: 30%;
+        padding-left:10px ;
+        padding-right: 10px;
+        margin-top: -30px;
+}
+}
+
+
+
+    

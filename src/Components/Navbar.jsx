@@ -1,204 +1,122 @@
 
 
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { MdClose } from "react-icons/md";
+import { HiMenuAlt2 } from "react-icons/hi";
+import { motion } from "framer-motion";
+import clubLogo from '../Images/logo-chai.png'; 
+import { navBarList } from "../constants/index";
+import { Link } from "react-router-dom";
 
+const Header = () => {
+  const [showMenu, setShowMenu] = useState(true);
+  const [sidenav, setSidenav] = useState(false);
+  const location = useLocation();
 
+  useEffect(() => {
+    const responsiveMenu = () => {
+      setShowMenu(window.innerWidth >= 768); 
+    };
 
-// import { Fragment } from 'react'
-// import logo from '../Images/logo-chai.png'
-// import { Disclosure, Menu, Transition } from '@headlessui/react'
-// import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/outline'
-// import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+    responsiveMenu();
 
-// const navigation = [
-//   { name: 'Home', href: '/', current: false },
-//   { name: 'Our Stories', href: '/video', current: false },
-//   { name: 'Gallery', href: '/photos', current: false },
-//   { name: 'Overview', href: '/ow', current: false },
-// ]
+    window.addEventListener("resize", responsiveMenu);
 
-// function classNames(...classes) {
-//   return classes.filter(Boolean).join(' ')
-// }
-
-// export default function Navbar() {
-//   const navigate = useNavigate(); // Use useNavigate hook for navigation
-
-//   return (
-//     <Disclosure as="nav" className="bg-gray-300">
-//       {({ open }) => (
-//         <>
-//           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-//             <div className="relative flex h-16 items-center justify-between">
-//               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-//                 {/* Mobile menu button*/}
-//                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-//                   <span className="absolute -inset-0.5" />
-//                   <span className="sr-only">Open main menu</span>
-//                   {open ? (
-//                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-//                   ) : (
-//                     <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-//                   )}
-//                 </Disclosure.Button>
-//               </div>
-//               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-//                 <div className="flex flex-shrink-0 items-center">
-//                   <img
-//                     className="h-10 w-auto"
-//                     src={logo}
-//                     alt="Your Company"
-//                   />
-//                 </div>
-//                 <div className="hidden sm:ml-6 sm:block">
-//                   <div className="flex space-x-4">
-//                     {navigation.map((item) => (
-//                       <a
-//                         key={item.name}
-//                         href={item.href}
-//                         onClick={(e) => {
-//                           e.preventDefault();
-//                           navigate(item.href); // Navigate to the clicked link
-//                         }}
-//                         className={classNames(
-//                           item.current ? 'bg-gray-900 text-white' : 'text-gray-800 hover:bg-yellow-600 text-xl hover:text-white',
-//                           'rounded-md px-3 py-2 text-sm font-medium'
-//                         )}
-//                         aria-current={item.current ? 'page' : undefined}
-//                       >
-//                         {item.name}
-//                       </a>
-//                     ))}
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-
-//           <Disclosure.Panel className="sm:hidden">
-//             <div className="space-y-1 px-2 pb-3 pt-2">
-//               {navigation.map((item) => (
-//                 <Disclosure.Button
-//                   key={item.name}
-//                   as="a"
-//                   href={item.href}
-//                   onClick={(e) => {
-//                     e.preventDefault();
-//                     navigate(item.href); // Navigate to the clicked link
-//                   }}
-//                   className={classNames(
-//                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-//                     'block rounded-md px-3 py-2 text-base font-medium'
-//                   )}
-//                   aria-current={item.current ? 'page' : undefined}
-//                 >
-//                   {item.name}
-//                 </Disclosure.Button>
-//               ))}
-//             </div>
-//           </Disclosure.Panel>
-//         </>
-//       )}
-//     </Disclosure>
-//   )
-// }
-
-
-
-import { Fragment } from 'react';
-import logo from '../Images/logo-chai.png';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { MenuIcon } from '@heroicons/react/solid'; // Change Bars3Icon to MenuIcon
-import { BellIcon, XIcon } from '@heroicons/react/solid'; // Change XMarkIcon to XIcon
-import { useNavigate } from 'react-router-dom';
-
-const navigation = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'Our Stories', href: '/video', current: false },
-  { name: 'Gallery', href: '/photos', current: false },
-  { name: 'Overview', href: '/ow', current: false },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
-
-export default function Navbar() {
-  const navigate = useNavigate();
+    return () => {
+      window.removeEventListener("resize", responsiveMenu);
+    };
+  }, []);
 
   return (
-    <Disclosure as="nav" className="bg-gray-300">
-      {({ open }) => (
-        <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-10 w-auto"
-                    src={logo}
-                    alt="Your Company"
-                  />
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigate(item.href);
-                        }}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-800 hover:bg-yellow-600 text-xl hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className="w-full h-20 bg-gray-400 sticky top-0 z-40 border-b-[1px] border-b-gray-200">
+      <nav className="h-full px-4 py-2 max-w-7xl mx-auto relative">
+        <div className="flex items-center justify-between h-full">
+          <HiMenuAlt2
+            onClick={() => setSidenav(!sidenav)}
+            className="inline-block md:hidden cursor-pointer w-8 h-6 absolute top-6 right-4"
+          />
+
+        
+         <Link to="/">
+         <img
+            src={clubLogo}
+            alt="Club Logo"
+            className="w-32"
+            
+          />
+         </Link>
+
+          {showMenu && (
+            <motion.ul
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="hidden md:flex items-center w-auto z-50 p-0"
+            >
+              {navBarList.map(({ _id, title, link }) => (
+                <NavLink
+                  key={_id}
+                  className="flex  font-normal hover:font-bold w-50 h-6 justify-center items-center px-12 text-lg text-black hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#262626] md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                  to={link}
+                  state={{ data: location.pathname.split("/")[1] }}
+                >
+                  {title}
+                </NavLink>
+              ))}
+            </motion.ul>
+          )}
+
+          <div className="hidden md:flex items-center">
+           
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigate(item.href);
-                  }}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+          {sidenav && (
+            <div className="fixed top-0 left-0 w-full h-screen bg-black text-gray-200 bg-opacity-80 z-50">
+              <motion.div
+                initial={{ x: -300, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="w-[80%] h-full relative"
+              >
+                <div className="w-full h-full bg-primeColor p-6">
+                
+                  <img
+                    src={clubLogo}
+                    alt="Club Logo"
+                    className="w-28 mb-6"
+                  />
+
+                  <ul className="text-gray-200 flex flex-col">
+                    {navBarList.map((item) => (
+                      <li
+                        className="text-sm font-normal hover:font-bold items-center text-lg text-gray-200 hover:underline underline-offset-[4px] decoration-[1px] hover:text-white md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                        key={item._id}
+                      >
+                        <NavLink
+                          to={item.link}
+                          state={{ data: location.pathname.split("/")[1] }}
+                          onClick={() => setSidenav(false)}
+                        >
+                          {item.title}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <span
+                  onClick={() => setSidenav(false)}
+                  className="w-8 h-8 border-[1px] border-gray-300 absolute top-2 -right-10 text-gray-300 text-2xl flex justify-center items-center cursor-pointer hover:border-red-500 hover:text-red-500 duration-300"
                 >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+                  <MdClose />
+                </span>
+              </motion.div>
             </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+          )}
+        </div>
+      </nav>
+    </div>
   );
-}
+};
+
+export default Header

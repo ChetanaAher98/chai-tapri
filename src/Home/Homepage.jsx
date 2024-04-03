@@ -5,7 +5,7 @@ import bgLine from '../Images/background_lining.jpeg';
 import restuarent from '../Images/restaurent.jpeg'
 import tea from '../Images/tea1.jpeg'
 import logo from '../Images/logo2.jpeg'
-// import '../Home/FirstPage.css'
+import '../Home/Homepage.css'
 
 export default function Homepage() {
   const bgStyle = {
@@ -35,7 +35,7 @@ export default function Homepage() {
   }
 
   const seprator = {
-    height: "120px",
+    height: "80px",
     paddingRight: "0 40px",
     width: "2px",
     backgroundColor: "black"
@@ -47,9 +47,9 @@ export default function Homepage() {
 
      {/* <Loader /> */}
 
-      <div style={bg} data-aos="fade-up">
-        <div style={main}>
-          <img src={restuarent} style={restaurantStyle} alt="Restaurant" />
+      <div style={bg} className='bg' data-aos="fade-up">
+        <div style={main} className='restaurent'>
+          <img src={restuarent} style={restaurantStyle} className='restaurent' alt="Restaurant" />
         </div>
       </div>
 
@@ -57,15 +57,15 @@ export default function Homepage() {
 
 
 <div className='mb-7 '>
-      <div class="container px-5 md:px-20c mb-20 " data-aos="fade-up">
+      <div class="container px-5 md:px-20c mb-20 " data-aos="fade-up ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="col-md-6 sm:w-full sm:h-48" >
             <img src={tea} style={{ marginTop: "-30px", height: "500px", width: "100%" }} alt="" />
           </div>
           <div class="col-md-6 sm:w-full" >
-            <div className='flex justify-center items-center flex-col sm:flex-row md:flex-row'>
+            <div className='flex justify-center info items-center flex-col sm:flex-row md:flex-row'>
               <img src={logo} height={150} width={150} className='m-5 md:m-20 p-5' alt="" />
-              <div style={seprator} className=' md:block'></div>
+              <div style={seprator} className='md:block seperator'></div>
               <p className='text-3xl md:pl-5'>
                 Cafes
               </p>
