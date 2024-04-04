@@ -36,7 +36,7 @@ export default function OurVoice() {
 
 
             <div className="container mx-auto px-4 py-8 text-center">
-                <h1 className="text-5xl md:text-4xl font-semibold text-blue-900 mb-4">
+                <h1 className="text-5xl md:text-4xl font-semibold text-[#000] mb-4">
                     The Voice Of Chai Tapri
                 </h1>
             </div>

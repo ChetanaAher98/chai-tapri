@@ -16,7 +16,7 @@ function MultipleItems() {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
   };
@@ -27,13 +27,14 @@ function MultipleItems() {
             className="slick-arrow slick-prev rounded-full"
             onClick={onClick}
             style={{
+               
               background: "white",
               display: "block",
               height: "50px",
               width: "50px",
               zIndex: "1",
               position: "absolute",
-              marginLeft: "40px",
+              marginLeft: "50px",
               color: "black"
             }}
           >
@@ -52,7 +53,7 @@ function MultipleItems() {
               display: "block",
               height: "50px",
               width: "50px",
-              marginRight: "40px"
+              marginRight: "50px"
             }}
           >
             <img src={nextArrow} alt="Next Arrow" style={{marginTop:"-17px",height:"30px",width:"30px",marginLeft:"10px"}} />
@@ -63,24 +64,24 @@ function MultipleItems() {
   return (
     <>
 <div data-aos="fade-up">
-<div   className="bg-gray-200 pt-20">
+<div   className="">
  <h1 className="textWithStroke text-center  text-black text-5xl pt-3 pb-3 font-bold">CAFE OUTLETS</h1>
    </div>
    
-    <div className="slider-container bg-gray-200">
+    <div className="slider-container ">
       <Slider {...settings}>
-        <div>
-          <img src={Slider1} alt="" className="w-full  rounded-full p-6 m-2" />
+        <div className="">
+          <img src={Slider1} alt="" className="w-full h-80 m-2 rounded-lg " />
 
         </div>
-        <div>
-         <img src={Slider2} alt=""  className="w-full  rounded-full p-6 m-2"/>
+        <div className="">
+        <img src={Slider2} alt=""  className="w-full h-80 m-2 rounded-lg "/>
         </div>
-        <div>
-        <img src={Slider3} alt=""  className="w-full  rounded-full p-6 m-2"/>
-        </div>
-        <div>
-        <img src={Slider4}  alt=""  className="w-full  rounded-full p-6 m-2"/>
+        <div className="">
+        <img src={Slider3} alt=""  className="w-full  h-80 m-2 rounded-lg "/>
+        </div >
+        <div className="">
+        <img src={Slider4}  alt=""  className="w-full h-80 m-2 rounded-lg"/>
         </div>
         
          
