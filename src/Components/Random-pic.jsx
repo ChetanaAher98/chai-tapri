@@ -4,6 +4,7 @@ import img2 from '../Images/card2.webp';
 import img1  from '../Images/card3.webp';
 import img4 from '../Images/card4.jpg';
 
+
 export default function Volunteers() {
   const line = {
     width: "60px",
@@ -14,11 +15,11 @@ export default function Volunteers() {
   return (
     <>
 
-      <div className='text-center  pt-8' >
-                    <h1 className=' text-3xl font-bold  text-3xl sm:text-5xl font-extrabold px-4 sm:px-20 ' style={{ color: "#041e42" }}>Feature Destination</h1>
+      <div className='text-center   bg-gray-200 pt-8' >
+                    <h1 className=' text-3xl font-bold  text-3xl sm:text-5xl font-extrabold px-4 sm:px-20 ' style={{ color: "black" }}>Feature Destination</h1>
                     {/* <div style={line}></div> */}
                 </div>
-      <div className="flex justify-center items-center py-10">
+      <div className="flex justify-center  bg-gray-200 items-center py-10">
       
         <div className="flex flex-wrap justify-center gap-4" >
           <TeamMember src={img1} name="CHAI TAPRI" role="Nashik" />
@@ -34,6 +35,8 @@ export default function Volunteers() {
 
 function TeamMember({ src, name, role }) {
   return (
+    <>
+   
     <div className="relative w-64">
       <img
         src={src}
@@ -45,5 +48,8 @@ function TeamMember({ src, name, role }) {
         <p className="text-sm">{role}</p>
       </div>
     </div>
+
+   
+    </>
   );
 }

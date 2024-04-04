@@ -49,7 +49,7 @@ export default function Video() {
             </div>
 
 <RandomPic/>
-            <div className="container mx-auto px-4 sm:px-10 md:px-20 lg:px-28 py-10 my-10">
+            <div className="container  mx-auto px-4 sm:px-10 md:px-20 lg:px-28 py-10 my-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 shadow-lg">
                     <div className="p-4 space-y-4">
                         <h1 className="text-xl md:text-2xl font-bold text-center">What is a chai tapri?</h1>
