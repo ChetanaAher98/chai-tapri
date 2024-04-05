@@ -62,11 +62,11 @@ export default function Video() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 my-10 shadow-lg py-10 gap-4">
                     <div className="flex justify-center items-center"data-aos="zoom-in">
-                        <img src={chaitapri} alt="Arpit Raj - Chaai Seth" className="h-72 w-72 object-cover mx-auto" />
+                        <img src={chaitapri} alt="Arpit Raj - Chaai Tapri" className="h-72 w-72 object-cover mx-auto" />
                     </div>
                     <div className="p-4 space-y-4">
                         <h1 className="text-xl md:text-2xl font-bold">Who is the owner of Chai Tapri?</h1>
-                        <p className="text-gray-500 text-base md:text-lg">Arpit Raj, the founder of Chaai Seth holds a BBA in Travel, Tourism & Hospitality, and an MBA degree in Marketing. The co-founder Prateek too is an MBA-Finance grad and worked with KPMG. Arpit Raj started the "chai" concept back in 2015 in Shillong.</p>
+                        <p className="text-gray-500 text-base md:text-lg">Arpit Raj, the founder of Chaai Tapri holds a BBA in Travel, Tourism & Hospitality, and an MBA degree in Marketing. The co-founder Prateek too is an MBA-Finance grad and worked with KPMG. Arpit Raj started the "chai" concept back in 2015 in Shillong.</p>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ export default function Video() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-10 py-10 shadow-lg">
                     <div className="p-4 space-y-4">
-                        <h1 className="text-xl md:text-2xl font-bold">Success Story of ‘Chaai Seth’ Founder Arpit Raj</h1>
+                        <h1 className="text-xl md:text-2xl font-bold">Success Story of ‘Chaai Tapri’ Founder Arpit Raj</h1>
                         <p className="text-gray-500 text-base md:text-lg">Success Story: Chai, for Indians, is not just a regular beverage but an emotion. Our day is empty, dull, and tiring without the “energy drink”. Sitting with your friends on a chai tapri, chit-chatting, and having heart-to-heart conversations while sipping tea are some of the best moments of our lives. Nothing can match the joy.</p>
                         <p className="text-gray-500 text-base md:text-lg">Chai business is also now on trend. Almost every day we see a new chai wala in the news who is building a successful business. However, not everyone has the potential to grow and expand on a PAN India level, as it requires a lot of dedication, taste stability, and discipline.</p>
                     </div>
@@ -92,7 +92,7 @@ export default function Video() {
                         <p className="text-gray-500 font-2xl">Soon, the boys moved to a flat, which meant they could hire a cook too to help them with orders. “I remember hiring a local Bengali woman who would prepare snacks, aloo parathas, gobi parathas, etc., and we’d get on our scooters to deliver these. Our promise was that we’d get the food to you within 30 minutes,” he told the Better India.</p>
                         <p className="text-gray-500 font-2xl">So, instead of striving for perfection in various cuisines, he decided to zero in on a food item that could bring people together no matter where they came from. And, tea was the answer!</p>
                         <p className="text-gray-500 font-2xl">The idea worked incredibly well. The climate of Shillong meant people flocked to the tapri ever so often, and soon, Arpit and his friends began to see returns. Arpit has roots in Bihar and was in Shillong for 3 years where he started this concept. In the final year of his college, he got placed in Delhi and had to join the job in a food startup. Working there for 2 years, he realized to work on my own venture and to shape it in a bigger way by making a full-fledged Pvt Ltd company.</p>
-                        <p className="text-gray-500 font-2xl">With the total investment starting from just 6-7 lacs, Arpit through his Chaai Seth franchise is offering 20+ varieties of tea and a fast-food menu! Recently, Chaai Seth has been nominated for the 500 startups award as well.</p>
+                        <p className="text-gray-500 font-2xl">With the total investment starting from just 6-7 lacs, Arpit through his Chaai Tapri franchise is offering 20+ varieties of tea and a fast-food menu! Recently, Chaai Tapri has been nominated for the 500 startups award as well.</p>
                         {/* <p className="text-gray-500 text-base md:text-lg">So, in the hostel room where the boys lived, Arpit and his friends initially started a tiffin delivery service that was exclusively meant for those wanting to snack late at night... (text continued)</p> */}
                        
                         {/* Ensure to include the rest of your text content here as needed */}

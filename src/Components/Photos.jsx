@@ -1,4 +1,5 @@
 import React from 'react';
+import over from '../Images/background_lining.jpeg'
 import cover from '../Images/cover.jpg';
 import food1 from '../Images/food1.jpg';
 import food2 from '../Images/food2.jpg';
@@ -7,13 +8,14 @@ import './Photos.css';
 import Gallery from '../Components/Gallery'
 
 export default function Photos() {
+   
     return (
-        <div className=' mb-2 '>
+        <div className=' mb-2 ' >
 
             <div className="bg-gray-100 flex ">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="py-4 text-center">
-                        <h1 className="text-5xl md:text-4xl font-semibold text-blue-900 mb-4">Explore Our Gallery</h1>
+                        <h1 className="text-5xl md:text-4xl font-semibold text-[#000] mb-4">Explore Our Gallery</h1>
                         <p className="text-lg md:text-xl text-gray-700">Travel with us as we expand our world, improve the communities we serve and open doors to new opportunities.</p>
                     </div>
                 </div>

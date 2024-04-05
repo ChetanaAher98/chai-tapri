@@ -9,7 +9,7 @@ export default function BrandLeader() {
         <div className=" flex  ">
           <div className="max-w-6xl mx-auto px-4">
             <div className="py-4 text-center">
-              <h1 className="text-5xl md:text-4xl font-semibold text-blue-900 mb-4">
+              <h1 className="text-5xl md:text-4xl font-semibold text-[#000] mb-4">
                 A Brand Leader
               </h1>
               <p

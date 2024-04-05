@@ -30,7 +30,7 @@ export default function Brand() {
                 </button> */}
 
 <Link to="/video">
-      <button className="bg-blue-500 hover:bg-blue-600 my-3 py-2 text-white font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
+      <button className="bg-yellow-300 hover:bg-black  hover:text-yellow-300 my-3 py-2 text-black font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
         Our Story
       </button>
     </Link>
@@ -50,7 +50,7 @@ export default function Brand() {
                   deliver on the promise of Marriott’s unique brand of
                   hospitality around the world.
                 </p>
-                <button className="bg-blue-500 hover:bg-blue-600 my-3 py-2 text-white font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
+                <button className="bg-yellow-300 hover:bg-black  hover:text-yellow-300 my-3 py-2 text-black font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
                   Our Strategy
                 </button>
               </div>
@@ -80,7 +80,7 @@ export default function Brand() {
                   strategic business goals. Taking care of people and their
                   well-being is our most precious cultural inheritance.
                 </p>
-                <button className="bg-blue-500 hover:bg-blue-600 my-3 py-2 text-white font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
+                <button className="bg-yellow-300 hover:bg-black  hover:text-yellow-300 my-3 py-2 text-black font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
                   Our Values
                 </button>
               </div>
@@ -103,7 +103,7 @@ export default function Brand() {
                   commits to creating positive and sustainable impact wherever
                   we do business.
                 </p>
-                <button className="bg-blue-500 hover:bg-blue-600 my-3 py-2 text-white font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
+                <button className="bg-yellow-300 hover:bg-black  hover:text-yellow-300 my-3 py-2 text-black font-bold px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110">
                   Learn More
                 </button>
               </div>
